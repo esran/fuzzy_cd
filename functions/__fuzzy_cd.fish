@@ -14,9 +14,9 @@ function __fuzzy_cd -d "fuzzy cd with jump bookmarks"
 		for dir in $tokens
 			switch $dir
 			case '.'
-				command cd .
+				builtin cd .
 			case '..'
-				command cd ..
+				builtin cd ..
 			case '*'
 				set -a token $dir
 			end
