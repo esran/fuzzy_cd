@@ -68,7 +68,7 @@ function __fuzzy_cd -d "fuzzy cd with jump bookmarks"
 		end
 
 
-		# set -l result (shortest $res)
+		# set -l result (fcd_shortest $res)
 		set -l result (printf "%s\n" $res | fzf -1 -0 --height=8 --info=inline --tiebreak=begin,length)
 
 		if test -n "$result"
